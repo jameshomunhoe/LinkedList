@@ -35,9 +35,12 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_createLinkedList_should_return_initialized_LinkedList_object(void);
-extern void test_list_Add_should_add_first_new_element_properly(void);
-extern void test_list_Add_should_add_second_new_element_properly(void);
-extern void test_list_Add_should_add_third_new_element_properly(void);
+extern void test_listAddLast_should_add_a_new_element_to_the_LinkedList(void);
+extern void test_listRemoveLast_should_remove_element_from_the_LinkedList(void);
+extern void test_listAddFirst_should_add_element_from_the_LinkedList(void);
+extern void test_listRemoveFirst_should_remove_element_from_the_LinkedList(void);
+extern void test_sort_last_element_to_first(void);
+extern void test_sort_first_element_to_last(void);
 
 
 //=======Test Reset Option=====
@@ -54,9 +57,12 @@ int main(void)
   Unity.TestFile = "test_linkedList.c";
   UnityBegin();
   RUN_TEST(test_createLinkedList_should_return_initialized_LinkedList_object, 9);
-  RUN_TEST(test_list_Add_should_add_first_new_element_properly, 22);
-  RUN_TEST(test_list_Add_should_add_second_new_element_properly, 41);
-  RUN_TEST(test_list_Add_should_add_third_new_element_properly, 65);
+  RUN_TEST(test_listAddLast_should_add_a_new_element_to_the_LinkedList, 22);
+  RUN_TEST(test_listRemoveLast_should_remove_element_from_the_LinkedList, 52);
+  RUN_TEST(test_listAddFirst_should_add_element_from_the_LinkedList, 111);
+  RUN_TEST(test_listRemoveFirst_should_remove_element_from_the_LinkedList, 148);
+  RUN_TEST(test_sort_last_element_to_first, 207);
+  RUN_TEST(test_sort_first_element_to_last, 248);
 
   return (UnityEnd());
 }

@@ -16,6 +16,9 @@ typedef struct Element_t{
 
 LinkedList *createLinkedList();
 
-void List_add(LinkedList *list,Element *element);
+void listAddLast(LinkedList *list,Element *element);
+Element *listRemoveLast(LinkedList *list);
+void listAddFirst(LinkedList *list,Element *element);
+Element *listRemoveFirst(LinkedList *list);
 
 #endif //__LINKED_LIST_H__

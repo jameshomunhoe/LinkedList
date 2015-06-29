@@ -6,20 +6,29 @@
 - :test: test_createLinkedList_should_return_initialized_LinkedList_object
   :line: 9
   :message: ''
-- :test: test_list_Add_should_add_first_new_element_properly
+- :test: test_listAddLast_should_add_a_new_element_to_the_LinkedList
   :line: 22
   :message: ''
-- :test: test_list_Add_should_add_second_new_element_properly
-  :line: 41
+- :test: test_listRemoveLast_should_remove_element_from_the_LinkedList
+  :line: 52
   :message: ''
-- :test: test_list_Add_should_add_third_new_element_properly
-  :line: 65
+- :test: test_listAddFirst_should_add_element_from_the_LinkedList
+  :line: 111
+  :message: ''
+- :test: test_listRemoveFirst_should_remove_element_from_the_LinkedList
+  :line: 148
+  :message: ''
+- :test: test_sort_last_element_to_first
+  :line: 207
+  :message: ''
+- :test: test_sort_first_element_to_last
+  :line: 248
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 4
-  :passed: 4
+  :total: 7
+  :passed: 7
   :failed: 0
   :ignored: 0
 :stdout: []
